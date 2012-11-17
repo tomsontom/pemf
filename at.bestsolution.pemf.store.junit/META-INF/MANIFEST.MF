@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Junit
+Bundle-SymbolicName: at.bestsolution.pemf.store.junit
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: at.bestsolution.pemf.store.junit.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.junit;bundle-version="3.8.2",
+ at.bestsolution.pemf.store;bundle-version="1.0.0",
+ at.bestsolution.pemf.store.test.model;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="at.bestsolution.pemf.store">
+   <implementation class="at.bestsolution.pemf.store.impl.PEMFStoreImpl"/>
+   <service>
+      <provide interface="at.bestsolution.pemf.store.PEntityStore"/>
+   </service>
+   <reference bind="setPersistentDatasource" cardinality="1..1" interface="at.bestsolution.pemf.store.PDatasource" name="PDatasource" policy="dynamic" unbind="unsetPersistentDatasource"/>
+</scr:component>
